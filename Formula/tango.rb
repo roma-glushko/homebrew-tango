@@ -2,16 +2,16 @@
 class Tango < Formula
   desc "Tango is a command-line tool for dancing with access logs"
   homepage "https://github.com/roma-glushko/tango"
-  version "1.0.0"
+  version "1.0.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/roma-glushko/tango/releases/download/1.0.0/tango_1.0.0_macOS_64-bit.zip"
-    sha256 "f5cb4a84e0994be80042ec7e54dfb828a0f09c919029b50487eea1a05547db12"
+    url "https://github.com/roma-glushko/tango/releases/download/1.0.1/tango_1.0.1_macOS_64-bit.zip"
+    sha256 "c0be00e24b313e340dd708a2c47a2a354d005fb1d2d874234c6568635a93a8c7"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/roma-glushko/tango/releases/download/1.0.0/tango_1.0.0_Linux_64-bit.zip"
-      sha256 "1950a2b7bac015ab9f7cb8f71fd565be6bf25b16d6c4ce6a431403475b123a8e"
+      url "https://github.com/roma-glushko/tango/releases/download/1.0.1/tango_1.0.1_Linux_64-bit.zip"
+      sha256 "7d3bbe743b50f966e25d5ce968e9b666d0b20cfc6252f53c61cb4bcda3fee0e7"
     end
   end
   
@@ -22,7 +22,7 @@ class Tango < Formula
   end
 
   def caveats; <<~EOS
-    How to use this binary
+    Tango is on the scene 🎉 Type tango --help to get started 💃💃💃
   EOS
   end
 
