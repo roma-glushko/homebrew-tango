@@ -2,24 +2,24 @@
 class Tango < Formula
   desc "Tango is a command-line tool for dancing with access logs"
   homepage "https://github.com/roma-glushko/tango"
-  version "1.0.3-rc5"
+  version "1.0.4"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/roma-glushko/tango/releases/download/1.0.3-rc5/tango_1.0.3-rc5_macOS_64-bit.zip"
-    sha256 "c802a7ed2be137b9c6e0431552a4758801f41989283f25964077d2e514363b50"
+    url "https://github.com/roma-glushko/tango/releases/download/1.0.4/tango_1.0.4_macOS_64-bit.zip"
+    sha256 "1af5dbe44a07e59e08b66355299262bda720f5488eb0cdcecd265dbb6f321e17"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/roma-glushko/tango/releases/download/1.0.3-rc5/tango_1.0.3-rc5_Linux_64-bit.zip"
-      sha256 "d3f4161e6ae6a9a09e56f8977eb60659c9a5acbd5019c83c1eb3155321acbe64"
+      url "https://github.com/roma-glushko/tango/releases/download/1.0.4/tango_1.0.4_Linux_64-bit.zip"
+      sha256 "b9bfc0bae12700e0a9edd90fc1116c818a313808f3dd19c6da9b2ea23195b3a5"
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/roma-glushko/tango/releases/download/1.0.3-rc5/tango_1.0.3-rc5_Linux_arm64.zip"
-        sha256 "754923f91dbd6543ccafaccb115f38df16e42413b4665a9a95de1f36566c2998"
+        url "https://github.com/roma-glushko/tango/releases/download/1.0.4/tango_1.0.4_Linux_arm64.zip"
+        sha256 "afefd878ed1754e6cb02b4f1d939a8e6baa9cdc87860792c017ec4ed64c2bc87"
       else
-        url "https://github.com/roma-glushko/tango/releases/download/1.0.3-rc5/tango_1.0.3-rc5_Linux_armv6.zip"
-        sha256 "2c403bb8d0f9ab54b01d902a0ae556e19133e93d7fe7e6d67a8ad4dfc5b5c529"
+        url "https://github.com/roma-glushko/tango/releases/download/1.0.4/tango_1.0.4_Linux_armv6.zip"
+        sha256 "6505cee247abd8ee4d83934865fba9a94a8cd24fc5d9f1b57d37efb82e22e916"
       end
     end
   end
