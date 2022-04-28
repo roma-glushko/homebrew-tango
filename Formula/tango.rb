@@ -5,20 +5,20 @@
 class Tango < Formula
   desc "Tango is a command-line tool for dancing with access logs"
   homepage "https://github.com/roma-glushko/tango"
-  version "1.1.1-rc1"
+  version "1.1.1"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/roma-glushko/tango/releases/download/1.1.1-rc1/tango_1.1.1-rc1_macOS_arm64.zip"
-      sha256 "603c64ab5deae53be4d45b381ced87a437c527d1fa6c0e5ef7eac796c46079a7"
+      url "https://github.com/roma-glushko/tango/releases/download/1.1.1/tango_1.1.1_macOS_arm64.zip"
+      sha256 "d3c7d0dbe222415ff94d3e8136af1f279c1226ceb45e299d75cc21e925945563"
 
       def install
         bin.install "tango"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/roma-glushko/tango/releases/download/1.1.1-rc1/tango_1.1.1-rc1_macOS_64-bit.zip"
-      sha256 "46f26739fddef1c35f4a51f8d3901e274339fd1621110f5a0a76607a2efd715a"
+      url "https://github.com/roma-glushko/tango/releases/download/1.1.1/tango_1.1.1_macOS_64-bit.zip"
+      sha256 "e6c1c39cb5f19612c8db3ba0bc7523ab2f14d66de97be74b1f35803ecf257a90"
 
       def install
         bin.install "tango"
@@ -27,25 +27,25 @@ class Tango < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/roma-glushko/tango/releases/download/1.1.1-rc1/tango_1.1.1-rc1_Linux_arm64.zip"
-      sha256 "04d705d2a8c61d2f66044957bc0915afdb8185cdccf8e69b8221bb42d4b344a9"
+    if Hardware::CPU.intel?
+      url "https://github.com/roma-glushko/tango/releases/download/1.1.1/tango_1.1.1_Linux_64-bit.zip"
+      sha256 "858a6e82c600f1b3bc6c1107cc76534e9c81e8f3ce8130dcf181c4677beb52c7"
 
       def install
         bin.install "tango"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/roma-glushko/tango/releases/download/1.1.1-rc1/tango_1.1.1-rc1_Linux_armv6.zip"
-      sha256 "13163fc0870a061d44b0e6b8f57d4f2b520c0bde4b8327482ff7c16143831334"
+      url "https://github.com/roma-glushko/tango/releases/download/1.1.1/tango_1.1.1_Linux_armv6.zip"
+      sha256 "68cd555e3fc7206840798904d6714a8dfbc8adf19db1e368c0e74c31353d59e8"
 
       def install
         bin.install "tango"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/roma-glushko/tango/releases/download/1.1.1-rc1/tango_1.1.1-rc1_Linux_64-bit.zip"
-      sha256 "b5a99e93a316dbcb4e59d0261528774ac93d4438c7a755fce8afd133e7c1f66e"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/roma-glushko/tango/releases/download/1.1.1/tango_1.1.1_Linux_arm64.zip"
+      sha256 "30f449cebb8bac60d17616ceeeec15be37e0fadb2f248706812e01ce3939fdad"
 
       def install
         bin.install "tango"
