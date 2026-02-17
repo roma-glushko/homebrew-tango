@@ -5,20 +5,20 @@
 class Tango < Formula
   desc "Tango is a command-line tool for dancing with access logs"
   homepage "https://github.com/roma-glushko/tango"
-  version "1.2.0-rc5"
+  version "1.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/roma-glushko/tango/releases/download/1.2.0-rc5/tango_1.2.0-rc5_macOS_64-bit.zip"
-      sha256 "ed031881f153c004918d1f50fdc0e777c65bb2967f78f53ec3393df20a150c61"
+      url "https://github.com/roma-glushko/tango/releases/download/1.2.0/tango_1.2.0_macOS_64-bit.zip"
+      sha256 "a72010701972d5afcff5f332e12136464c72f1b78b77461bd35999ae17d55805"
 
       def install
         bin.install "tango"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/roma-glushko/tango/releases/download/1.2.0-rc5/tango_1.2.0-rc5_macOS_arm64.zip"
-      sha256 "93a239587f634f9093aa9c1fbd936ef5067c17b2749a673a1b27a2cc17d910b1"
+      url "https://github.com/roma-glushko/tango/releases/download/1.2.0/tango_1.2.0_macOS_arm64.zip"
+      sha256 "8b5b44db090392bb439170b11338115e6f061c26358f6ef9123ac26488cb8884"
 
       def install
         bin.install "tango"
@@ -28,15 +28,15 @@ class Tango < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/roma-glushko/tango/releases/download/1.2.0-rc5/tango_1.2.0-rc5_Linux_64-bit.zip"
-      sha256 "6170f2f30196d0731ef011fd1f61c680229ab6c079ecd0484734657f9685d873"
+      url "https://github.com/roma-glushko/tango/releases/download/1.2.0/tango_1.2.0_Linux_64-bit.zip"
+      sha256 "bfc510aaa910a8ad283c2e2d1a5244e3d4057d9701c9df3cc560ef4b2b30ba1b"
       def install
         bin.install "tango"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/roma-glushko/tango/releases/download/1.2.0-rc5/tango_1.2.0-rc5_Linux_arm64.zip"
-      sha256 "a3f8398e6bf73f747b7924ad32126f295048307ff01cb8b6e0693c7c6d08171f"
+      url "https://github.com/roma-glushko/tango/releases/download/1.2.0/tango_1.2.0_Linux_arm64.zip"
+      sha256 "85f6ce2bc4d6df56245c64fd65c529391badf196e983cc03792967b2b056bb16"
       def install
         bin.install "tango"
       end
