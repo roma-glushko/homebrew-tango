@@ -5,20 +5,20 @@
 class Tango < Formula
   desc "Tango is a command-line tool for dancing with access logs"
   homepage "https://github.com/roma-glushko/tango"
-  version "1.2.0-rc4"
+  version "1.2.0-rc5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/roma-glushko/tango/releases/download/1.2.0-rc4/tango_1.2.0-rc4_macOS_64-bit.zip"
-      sha256 "c107942a072088d6fd2a4fe06277c5355abff3c3103e9d88686fc5f1c8a37d52"
+      url "https://github.com/roma-glushko/tango/releases/download/1.2.0-rc5/tango_1.2.0-rc5_macOS_64-bit.zip"
+      sha256 "ed031881f153c004918d1f50fdc0e777c65bb2967f78f53ec3393df20a150c61"
 
       def install
         bin.install "tango"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/roma-glushko/tango/releases/download/1.2.0-rc4/tango_1.2.0-rc4_macOS_arm64.zip"
-      sha256 "d2be5ea337d29b5067b21897717c6fdf35a5135b493b20844a73157af44c9d60"
+      url "https://github.com/roma-glushko/tango/releases/download/1.2.0-rc5/tango_1.2.0-rc5_macOS_arm64.zip"
+      sha256 "93a239587f634f9093aa9c1fbd936ef5067c17b2749a673a1b27a2cc17d910b1"
 
       def install
         bin.install "tango"
@@ -28,15 +28,15 @@ class Tango < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/roma-glushko/tango/releases/download/1.2.0-rc4/tango_1.2.0-rc4_Linux_64-bit.zip"
-      sha256 "a8d4dcc9b1edce0ae98a6427cf621d42495471724da816e378b2d30a4e421d9e"
+      url "https://github.com/roma-glushko/tango/releases/download/1.2.0-rc5/tango_1.2.0-rc5_Linux_64-bit.zip"
+      sha256 "6170f2f30196d0731ef011fd1f61c680229ab6c079ecd0484734657f9685d873"
       def install
         bin.install "tango"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/roma-glushko/tango/releases/download/1.2.0-rc4/tango_1.2.0-rc4_Linux_arm64.zip"
-      sha256 "68b5c8c8a43775808b1b2563853181bf1c5441015d019f4b97bfdab0b3071e7e"
+      url "https://github.com/roma-glushko/tango/releases/download/1.2.0-rc5/tango_1.2.0-rc5_Linux_arm64.zip"
+      sha256 "a3f8398e6bf73f747b7924ad32126f295048307ff01cb8b6e0693c7c6d08171f"
       def install
         bin.install "tango"
       end
